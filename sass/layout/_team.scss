@@ -3,16 +3,26 @@
 }
 
 .team__list {
-  gap: 30px;
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
+  @media screen and (min-width: 768px) {
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .team__item {
   width: 100%;
   background-color: var(--primary-white-color);
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
+    margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
     width: calc((100% - 90px) / 4);
