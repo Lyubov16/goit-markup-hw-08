@@ -16,9 +16,12 @@
 }
 
 .feature__list {
-  gap: 30px;
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
+  @media screen and (min-width: 768px) {
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .feature__item {
@@ -36,9 +39,12 @@
 
 .feature__subtitle {
   color: var(--primary-text-color);
-  @include font(14px, 700, 1.14, 0.03em, null);
+  @include font(14px, 700, 1.14, 0.03em, center);
   text-transform: uppercase;
   margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 
 .feature__text {

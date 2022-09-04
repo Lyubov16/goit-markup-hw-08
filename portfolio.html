@@ -47,14 +47,14 @@
         <div class="connect">
           <ul class="connect__list list">
             <li class="connect__item">
-              <a href="mailto:info@devstudio.com" class="connect__link"
+              <a href="mailto:info@devstudio.com" class="connect__link mail"
                 ><svg class="connect__icon-mail" width="16" height="12">
                   <use href="./images/icons.svg.svg#icon-envelope"></use></svg
                 >info@devstudio.com</a
               >
             </li>
             <li class="connect__item">
-              <a href="tel:+380961111111" class="connect__link"
+              <a href="tel:+380961111111" class="connect__link tel"
                 ><svg class="connect__icon-tel" width="10" height="16">
                   <use href="./images/icons.svg.svg#icon-smartphone"></use></svg
                 >+38 096 111 11 11</a
@@ -68,7 +68,7 @@
           </svg>
         </button>
       </div>
-      <div class="menu is-hidden">
+      <div class="menu is-hidden" data-menu>
         <div class="menu-container">
           <div class="menu-container__top">
             <button type="button" class="menu-btn__close">
@@ -598,63 +598,65 @@
     </main>
     <footer class="footer">
       <div class="footer__flex container">
-        <div>
-          <a href="index.html" lang="en" class="logo logo--white"
-            ><span class="logo__part">Web</span>Studio</a
-          >
-          <address class="footer__address">
-            <ul class="footer__list list">
-              <li class="footer__item">
-                <a
-                  href="https://bit.ly/3pXMvUd"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="footer__location"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+        <div class="footer__tab">
+          <div class="footer__logo-box">
+            <a href="index.html" lang="en" class="logo logo--white"
+              ><span class="logo__part">Web</span>Studio</a
+            >
+            <address class="footer__address">
+              <ul class="footer__list list">
+                <li class="footer__item">
+                  <a
+                    href="https://bit.ly/3pXMvUd"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="footer__location"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="mailto:info@example.com" class="footer__contact"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="tel:+380991111111" class="footer__contact"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__soc">
+            <p class="footer__text">Приєднуйтесь</p>
+            <ul class="soc list">
+              <li class="soc__item">
+                <a href="" class="soc__link soc__link--footer">
+                  <svg class="footer__icons" width="20" height="20">
+                    <use href="./images/icons.svg.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
-                <a href="mailto:info@example.com" class="footer__contact"
-                  >info@example.com</a
-                >
+              <li class="soc__item">
+                <a href="" class="soc__link soc__link--footer"
+                  ><svg class="footer__icons" width="20" height="20">
+                    <use href="./images/icons.svg.svg#icon-twitter"></use></svg
+                ></a>
               </li>
-              <li class="footer__item">
-                <a href="tel:+380991111111" class="footer__contact"
-                  >+38 099 111 11 11</a
-                >
+              <li class="soc_item">
+                <a href="" class="soc__link soc__link--footer"
+                  ><svg class="footer__icons" width="20" height="20">
+                    <use href="./images/icons.svg.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="soc__item">
+                <a href="" class="soc__link soc__link--footer"
+                  ><svg class="footer__icons" width="20" height="20">
+                    <use href="./images/icons.svg.svg#icon-linkedin"></use></svg
+                ></a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer__soc">
-          <p class="footer__text">Приєднуйтесь</p>
-          <ul class="soc list">
-            <li class="soc__item">
-              <a href="" class="soc__link soc__link--footer">
-                <svg class="footer__icons" width="20" height="20">
-                  <use href="./images/icons.svg.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc__item">
-              <a href="" class="soc__link soc__link--footer"
-                ><svg class="footer__icons" width="20" height="20">
-                  <use href="./images/icons.svg.svg#icon-twitter"></use></svg
-              ></a>
-            </li>
-            <li class="soc_item">
-              <a href="" class="soc__link soc__link--footer"
-                ><svg class="footer__icons" width="20" height="20">
-                  <use href="./images/icons.svg.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li class="soc__item">
-              <a href="" class="soc__link soc__link--footer"
-                ><svg class="footer__icons" width="20" height="20">
-                  <use href="./images/icons.svg.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="footer__box">
           <p class="footer__text">Підписуйтесь на розсилку</p>

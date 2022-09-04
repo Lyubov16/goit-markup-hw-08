@@ -1,17 +1,13 @@
 .btn {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
   gap: 8px;
   margin-bottom: 40px;
-  // width: 290px;
   row-gap: 15px;
   @media screen and (min-width: 480px) {
     justify-content: flex-start;
-    width: 362px;
   }
   @media screen and (min-width: 768px) {
-    width: 611px;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
@@ -111,7 +107,7 @@
   @include position(absolute, 0, null, null, 0);
   width: 100%;
   height: 100%;
-  overflow: auto;
+  padding: 24px 24px;
   background-color: var(--cover-color);
   transform: translateY(101%);
   opacity: 0;
@@ -126,21 +122,19 @@
 }
 
 .cover__text {
-  @include font(16px, null, 1.6, 0.03em, null);
-  width: calc(100% - 30px);
+  display: block;
+  @include font(18px, null, 1.56, 0.03em, null);
+  width: 100%;
+  height: calc(100% - 40px);
   min-height: 140px;
-  // overflow: auto;
-  padding: 5px 0;
+  overflow-y: scroll;
   color: var(--primary-white-color);
   @media screen and (min-width: 480px) {
     @include font(18px, null, 1.56, 0.03em, null);
-    width: calc(100% - 48px);
+    height: calc(100% - 100px);
     min-height: 140px;
   }
   @media screen and (min-width: 768px) {
-    width: calc(100% - 48px);
     min-height: 168px;
   }
-
-  /* padding: 63px 24px; */
 }
